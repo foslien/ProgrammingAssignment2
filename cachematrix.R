@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## the following functions are designed to store a cached version of a matrix inverse.
+## the intent is to minimize computation. users first call makeCacheMatrix with a standard
+## matrix (the matrix must be square). then, to get the inverse of the special cached users
+## call "cacheSolve"
 
-## makeCacheMatrix creates a special matrix object. the special matrix can store it's own inverse
+## makeCacheMatrix creates a special matrix object. this special matrix can store it's own inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
